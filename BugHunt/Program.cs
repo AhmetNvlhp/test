@@ -8,6 +8,7 @@ var cart = new List<CartItem>
 };
 
 var calculator = new CartCalculator();
+var calculator2 = new CartCalculator();
 var total = calculator.CalculateTotal(cart, "TRY");
 Console.WriteLine($"Cart total: {total.ToString("C", CultureInfo.GetCultureInfo("tr-TR"))}");
 
